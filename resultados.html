@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resultado.css">
+    <script src="js.js" defer></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <main id="main">
+        <section id="forms">
+            <label id="lbl1">Nome: </label>
+            <label id="lbl2">Endereço: </label>
+            <label id="lbl3">CEP: </label>
+            <label id="lbl4">CPF: </label>
+            <label id="lbl5">TELEFONE: </label>
+            <label id="lbl6">CNPJ: </label>
+            <label id="lbl7">CÓDIGO: </label>
+            <input id="input1" type="text">
+            <input id="input2" type="text">
+            <input id="input3" type="text" placeholder="99.999-999" oninput=mascara_cep() maxlength="10">
+            <input id="input4" type="text" placeholder="999.999.999-99" oninput=mascara_cpf() maxlength="14">
+            <input id="input5" type="tel" placeholder="(31)99999-9999" oninput=mascara_telefone() maxlength="14">
+            <input id="input6" type="text" placeholder="99.999.999/0001-99" oninput=mascara_cnpj() maxlength="18">
+            <input id="input7" type="text" placeholder="xx_xx//999-999.9.999" oninput=mascara_cod() maxlength="20">
+            <div id="btn"><a href="formulario.html">Voltar</a></div>
+        </section>
+    </main>
+</body>
+</html>

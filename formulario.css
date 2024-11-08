@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+height: 100vh;
+display: flex;
+background-color: black;
+justify-content: center;
+align-items: center;
+}
+
+#forms{
+display: grid;
+height: 65vh;
+width: 40%;
+background-color: darkorange;
+border-radius: 20px;
+grid-template-areas: 
+'lbl1 input1'
+'lbl2 input2'
+'lbl3 input3'
+'lbl4 input4'
+'lbl5 input5'
+'lbl6 input6'
+'lbl7 input7'
+'botao botao';
+}
+
+#forms label{
+margin-left: 2vh;
+margin-top: 2vh;
+margin-bottom: 2vh;
+font-size: 18px;
+}
+
+#forms input{
+margin-top: 1vh;
+margin-bottom: 1vh;
+margin-right: 3vh;
+font-size: 20px;
+border-radius: 5px;
+border: 0;
+}
+
+#lbl1{
+grid-area: lbl1;
+}
+#lbl2{
+    grid-area: lbl2;
+}
+#lbl3{
+    grid-area: lbl3;
+}
+#lbl4{
+    grid-area: lbl4;
+}
+#lbl5{
+    grid-area: lbl5;
+}
+#lbl6{
+    grid-area: lbl6;
+}
+#lbl7{
+    grid-area: lbl7;
+}
+#input1{
+grid-area: input1;
+}
+#input2{
+    grid-area: input2;
+}
+#input3{
+    grid-area: input3;
+}
+#input4{
+    grid-area: input4;
+}
+#input5{
+    grid-area: input5;
+}
+#input6{
+    grid-area: input6;
+}
+#input7{
+    grid-area: input7;
+}
+#btn{
+    grid-area: botao;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+#btn a{
+background-color: red;
+color: white;
+border-radius: 5px;
+width: 30%;
+text-align: center;
+padding-top: 1vh;
+text-decoration: none;
+border: solid 1px black;
+}
